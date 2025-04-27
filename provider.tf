@@ -21,6 +21,12 @@ terraform {
 
 provider "azurerm" {
   features {}
-  subscription_id = "2178b722-5baa-4418-8bc9-3fcb9cd14fed"
+  subscription_id = ""
+
+}
+
+resource "azurerm_resource_group" "rg_name" {
+  name     = "jkl"
+  location = "eastus"
 
 }
