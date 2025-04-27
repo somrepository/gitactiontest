@@ -1,7 +1,7 @@
 terraform {
 
   backend "azurerm" {
-    subscription_id      = "2178b722-5baa-4418-8bc9-3fcb9cd14fed"
+
     resource_group_name  = "gitaction_str"
     storage_account_name = "masterstoragegithub" # Can be passed via `-backend-config=`"storage_account_name=<storage account name>"` in the `init` command.
     container_name       = "gitbackup"           # Can be passed via `-backend-config=`"container_name=<container name>"` in the `init` command.
@@ -21,12 +21,12 @@ terraform {
 
 provider "azurerm" {
   features {}
-  subscription_id = "2178b722-5baa-4418-8bc9-3fcb9cd14fed"
+
 
 }
 
-resource "azurerm_resource_group" "rg_name" {
-  name     = "jkl"
+resource "azurerm_resource_group" "rg_name6" {
+  name     = "jkl3"
   location = "East US"
 
 }
