@@ -32,7 +32,7 @@ resource "azurerm_resource_group" "rg_name6" {
 }
 
 resource "azurerm_resource_group" "rg_name5" {
-  name     = "jkl3"
+  name     = "jkl10"
   location = "East US"
 
 }
