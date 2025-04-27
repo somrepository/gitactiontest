@@ -30,3 +30,9 @@ resource "azurerm_resource_group" "rg_name6" {
   location = "East US"
 
 }
+
+resource "azurerm_resource_group" "rg_name5" {
+  name     = "jkl3"
+  location = "East US"
+
+}
