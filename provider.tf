@@ -25,14 +25,10 @@ provider "azurerm" {
 
 }
 
-resource "azurerm_resource_group" "rg_name6" {
-  name     = "jkl3"
+resource "azurerm_resource_group" "rg_namec" {
+  count = 5
+  name     = "jkl3${count.index}"
   location = "East US"
 
 }
 
-resource "azurerm_resource_group" "rg_name5" {
-  name     = "jkl10"
-  location = "East US"
-
-}
