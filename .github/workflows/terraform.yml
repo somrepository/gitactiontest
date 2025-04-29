@@ -11,7 +11,8 @@ permissions:
 jobs:
   terraform:
     name: 'Terraform'
-    runs-on: [self-hosted, spiderman]
+    runs-on: [self-hosted, linux, x64]
+
     environment: dev
     env:
       ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
