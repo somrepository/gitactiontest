@@ -11,7 +11,7 @@ permissions:
 jobs:
   terraform:
     name: 'Terraform'
-    runs-on: [self-hosted, linux, x64]
+    runs-on: [self-hosted, batman1]
 
     environment: dev
     env:
