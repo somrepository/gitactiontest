@@ -26,8 +26,8 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "rg_namec" {
-  count    = 3
-  name     = "jkl3${count.index}"
+  count    = 5
+  name     = "jk-${count.index}"
   location = "East US"
 
 }
